@@ -2,7 +2,6 @@ package org.vibeinc.aislop;
 
 import java.util.List;
 import java.util.Map;
-import java.util.NoSuchElementException;
 
 public interface Student {
     String getName();
@@ -12,4 +11,6 @@ public interface Student {
     Schedule getSchedule();
 
     Map<Subject, List<Integer>> getGrades();
+
+    void addGrade(Subject subject, int grade);
 }
